@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="">
+
+	<head>
+	    <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>Museum Search</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" type="text/css" media="screen" href="CSS/style.css" />
+	    <script src="main.js"></script>
+	</head>
+	
+	<body>
+	
+		<!-- header with the login button -->
+		<header>
+			<form class = "log_button" action = "http://localhost:8080/myMuseum/login">
+		  		<input type="submit" value="Log in (demo)" />
+			</form>
+			<h1>MUSEUM SEARCH</h1>	
+		</header>
+		
+		<!-- slogan of the project -->
+		<div class = "slogan">	
+			<h2>Where will your curiosity lead you today?</h2>
+		</div>	
+		
+		
+		<!-- lists for continents divided in three blocks (couldnt do it differently) :( -->
+		 <div th:each = "a: ${continents}" class = "links_continets">        
+		    <ul class="menu1">
+		        <li class = "NA">
+		        	<div class = "links"><a th:href="@{|${a}|}" th:text="${a}"></a></div>
+		        </li>
+		    </ul>
+      
+		 </div>
+		
+	</body>
+
+</html>

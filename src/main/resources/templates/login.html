@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+	<head>
+	    <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title th:text="${museumName}"></title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" type="text/css" media="screen" th:href="@{/CSS/style.css}"/>
+	</head>
+	
+	<body>
+		
+		<header>
+		<!-- below header with name of the museum, which is link to the main page  -->
+			<div>
+			<a class="main" th:href="@{http://localhost:8080/myMuseum/}"><h1>MUSEUM SEARCH</h1></a>
+			</div>
+				
+		</header>
+		
+		<!-- Log in forms - intentionally without button as it is just a tempalte of the log in page without functionality -->
+		<div class = "user" style="width:440px;height:500px;">
+		<!-- below form for log in of existing user  -->
+			<div class = "login" id = "login" style="width:50%;height:500px;" >
+				<h2>Log In</h2>
+				<form class = "loginf">
+					  <h3>User name:</h3><br>
+					  <input type="text" name="username"><br>
+					  <h3>Password:</h3><br>
+					  <input type="text" name="password">
+				</form>	
+			</div>
+			
+			<!-- below form for log in of new user  -->
+			<div class="register" id = "register" style="width:50%;height:500px;">
+				<h2>Registration</h2>
+				<form class = "registrf">
+					  <h3>User name:</h3><br>
+					  <input type="text" name="username"><br>
+					  <h3>Password:</h3><br>
+					  <input type="text" name="password">
+					  <h3>Repeat password:</h3><br>
+					  <input type="text" name="password_repeat">
+				</form>	
+			</div>
+		</div>
+		
+	</body>
+
+</html>

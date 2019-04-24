@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+	<head>
+	    <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title th:text="${museumName}"></title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" type="text/css" media="screen" th:href="@{/CSS/style.css}"/>
+	</head>
+	
+	<body>
+	
+		<!-- below header with name of the museum, which is link to the main page and log in button -->
+		<header>
+			<form class = "log_button" action = "http://localhost:8080/myMuseum/login">
+		  		<input type="submit" value="Log in (demo)" />
+			</form>
+			
+			<div>
+				<a class="main" th:href="@{http://localhost:8080/myMuseum/}"><h1>MUSEUM SEARCH</h1></a>
+			</div>		
+		</header>
+		<div th:each="a : ${museumInfo}">
+		<!-- name of the museum -->
+		<div class = "name_page">
+			<h2 th:text="${a.museumName}"></h2>
+		</div>
+		
+		<!-- image of the museum -->
+		<Section class="museumImage" id="museumImage">
+		    <img th:src="@{${a.museumPicture}}"></img>
+		</section>
+		
+		<!-- information about the the museum -->
+		<div class = "info" id = "info" style="width:600px;height:100px;">
+			<!-- contact details about the the museum -->
+			<div class="address" id="address">
+				<h3>Details</h3>
+				<div class="address"><h4 class="address">Address:</h4></div>
+				<div class="address"><h4 class="address" th:text="${a.museumAddress}"></h4></div>
+			</div>
+		
+			<div></div><!-- space -->
+		
+			<!-- information about website of the museum -->
+			<div class = "web" id = "web">
+				<div class="web"><h4 class="web">Web-site:</h4></div> 
+				<div class="web"><a class="web" th:href="@{${a.museumWeb}}"><h4 class="web" th:text="${a.museumWeb}"></h4></a></div> <!-- I didnt find out why it is wrong, but it is working (all the yellow tags) -->
+		    </div>
+		</div>
+		
+		<!-- information about history of the museum -->
+		<div class="description" id = "description" style="width:600px;height:475px;"> <!-- I know i shouldnt use style in HTML, will correct -->
+			<h3>Info</h3>
+			<h4 th:text="${a.museumDescription}"></h4>
+		</div>
+	</div>
+	</body>
+
+
+</html>

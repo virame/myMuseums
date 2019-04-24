@@ -1,0 +1,394 @@
+/*CSS for all pages*/
+
+/*settings for header text*/
+ h1 {
+  margin: 0 0 0 10px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  color: #FC764C;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 60px;
+  
+}
+ 
+ /*settings for h2 text*/
+ h2 {
+  margin: 10px 0 10px 10px;
+  color: #4056A1;
+  font-size: 35px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/*setting for forms*/
+form {
+	display:inline;
+	margin: 0px 0 0px 10px;
+}
+
+/*setting for html*/
+html {
+    box-sizing: border-box;
+  }
+
+/*setting for buttons*/  
+ input[type='submit'] {
+	margin-top: 7px;
+	margin-bottom: 7px;
+	height: 50px;
+	background: #4056A1;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: #FC764C;
+	margin-right: 10px;
+}
+
+/*setting for header background*/
+header {
+	background-color:  #C5CBE3;
+	border-bottom: 2px solid #D79922;
+}
+
+/*setting for body*/
+body {
+	margin: 0;
+	background-color: #f6eed3;
+}
+
+/*setting for label */ 
+label {
+    display: block;
+    font: .9rem 'Fira Sans', sans-serif;
+}
+
+
+/*setting for buttons*/ 
+.main_button {
+    float: left;
+}
+
+/*setting for link to main*/ 
+.main {
+	text-decoration: none;
+}
+
+/*CSS for main page*/
+  
+ /*position of the slogan*/  
+ .slogan {
+ 	margin: 30px 0 0 0 ;
+ }
+
+/*setting for list items in three blocks of menu*/
+ .menu1 li{
+    display: block;
+    border: 1px solid #D79922;
+    padding: 0px;
+    margin: 30px;
+  
+  }
+  
+.menu2 li{
+    display: block;
+    border: 1px solid #D79922; 
+    padding: 0px; 
+    margin: 30px;
+  
+  }
+  
+.menu3 li{
+    display: block;
+    border: 1px solid #D79922;   
+    padding: 0px;
+    margin: 30px;
+  
+  }
+/*setting for menus in three blocks of menu*/
+.menu1{
+    width: 32%;
+    height: 32%;  
+    background-color:  #f6eed3;
+    float: left;
+    padding: 0;
+    margin:0;
+  }
+  
+.menu2{ 
+    width: 32%;
+    height: 32%;
+    background-color:  #f6eed3;
+    float: left;
+    padding: 0;
+    margin:0;
+  }
+.menu3{
+    width: 32%;
+    height: 32%;
+    background-color:  #f6eed3;
+    float: left;
+    padding: 0;
+    margin:0;
+  }
+  
+/*setting for links in three blocks of menu*/
+.menu1 a{
+    color: #FFFFF0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    vertical-align: middle;
+    line-height: 400px;
+    width: 400 px;
+    text-decoration: none;
+    padding: 0px;
+    display: block;
+  }
+.menu2 a{
+    color: #FFFFF0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    vertical-align: middle;
+    line-height: 400px;
+    width: 400 px;
+    text-decoration: none;
+    padding: 0px;    
+    display: block;
+  }
+.menu3 a{
+    color: #FFFFF0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    allign-items: center;
+    font-size: 30px;
+    vertical-align: middle;
+    line-height: 400px;
+    width: 400 px;
+    text-decoration: none;
+    padding: 0px;    
+    display: block;
+  }
+
+/*below are setting for specific continents from the menu*/
+.Oceania {
+    text-align: center;
+    background-color:  #BEDAFF;
+    height: 400px;
+    width: 400 px; 
+    padding: 0;
+    margin: 0;
+  }
+.Asia{
+    text-align: center;
+    height: 400px;
+    width: 400 px; 
+    background-color:  #CC7B42;
+    padding: 0;
+    margin: 0;
+  }
+.NA{
+    text-align: center;
+    height: 400px;
+    width: 400 px; 
+    background-color:  #FF7E6C;
+    padding: 0;
+    margin: 0;
+  }
+.SA{
+    text-align: center;
+    height: 400px;
+    width: 400 px; 
+    background-color:  #4ACC42;
+    padding: 0;
+    margin: 0;
+  }
+.Africa{
+    text-align: center;
+    height: 400px;
+    width: 400 px; 
+    background-color:  #99897E;
+    padding: 0;
+    margin: 0;
+  }
+.Europe{
+    text-align: center;
+    height: 400px;
+    width: 400 px; 
+    background-color:  #FF7E6C;
+    padding: 0;
+    margin: 0;
+  }
+  
+/*CSS for region pages*/
+
+/*setting for image of the region*/
+.map img {
+     
+    width: 500px; 
+    height: 600px;
+    float: right;
+    margin-right: 10px;
+  }
+  
+ /*setting for list of museums in this region*/ 
+ .museums {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 940px; 
+    margin: 0 0 0 10px;
+  }
+  
+/*setting for image of the museum*/  
+.img__wrap {
+  position: relative; 
+	width:300px;
+	height:300px;
+	border: 2px solid #D79922;
+}
+
+/*setting for link on the image of the museum that leads to correct description*/ 
+.img__description {
+  position: absolute;
+  width:300px;
+  height:300px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* Next three line to make name of the museum in the middle of the photo */
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300px;
+  background: rgba(252, 118, 76, 0.70);
+  color: #FFFFF0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-decoration: none;
+  border: 1px solid #4056A1;
+
+  /* transition effect*/
+  transition: opacity .2s, visibility .2s;
+}
+
+/*setting for link on the image*/ 
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*CSS for Museums pages*/
+
+/*setting for positioning of the information part of the template*/ 
+ .address {
+    display: inline;
+ }
+
+ .web {
+    display: inline;
+ }
+
+.info h3{
+	color: #FC764C;
+	margin-left: 5px;
+}
+
+.info h4{
+	color: #4056A1;
+	margin-left: 5px;
+}
+
+.info,
+.description {
+	margin-left: 10px;
+}
+
+.info {
+	background-color:  #C5CBE3;	
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	border: 1px solid #4056A1;
+
+}
+
+.description {
+	background-color:  #D79922;	
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	border: 1px solid #FC764C;
+	margin-top: 20px;
+	
+}
+
+.description h3{
+	color: #4056A1;
+	margin-left: 5px;
+}
+
+.description h4{
+	color: #f6eed3;
+	margin-left: 5px;
+}
+
+/*setting for positioning of the image of the template*/
+.museumImage img {  
+    width: 500px; 
+    height: 600px;
+    float: right;
+    margin-right: 10px;
+    border: 2px solid #FC764C;
+  }
+
+/*CSS for Login pages*/
+
+
+/*TO make login and registration in the middle of the page*/
+
+.log_button {
+  	float: right;
+}
+
+.user {
+	    display: flex;
+		margin-top:20px;
+		margin-right:auto;
+		margin-bottom:0;
+		margin-left:auto;
+}
+
+/*setting for login frame*/
+.login {
+	float:left;
+	border: 1px solid #FC764C;
+	margin-top: 20px;
+}
+
+/*setting for register frame*/
+.register {
+	float:left;
+	border: 1px solid #FC764C;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+/*setting for login frame to move text from the border*/
+.loginf h3,
+		input{
+	margin-left: 10px;
+}
+
+/*setting for register frame to move text from the border*/
+.registrf h3,
+		input{
+	margin-left: 10px;
+}
+
+/*setting for register and login frame for text*/
+.loginf h3,
+.registrf h3 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: #FC764C;
+}
+
+
+
+ 

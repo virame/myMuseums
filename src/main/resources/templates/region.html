@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+	<head>
+	    <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title th:text="${countryName}"></title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" type="text/css" media="screen" href="CSS/style.css" />
+	    <script src="main.js"></script>  
+	</head>
+	
+	<body>
+		<!-- below header with name of the museum, which is link to the main page and log in button -->
+		<header>
+			<form class = "log_button" action = "http://localhost:8080/myMuseum/login">
+		  		<input type="submit" value="Log in (demo)" />
+			</form>
+			<div>
+				<a class="main" th:href="@{http://localhost:8080/myMuseum/}"><h1>MUSEUM SEARCH</h1></a>
+			</div>	
+		</header>
+		
+		<!-- continent name (sorry, its called country name, my mistake, but didnt want to change everything when i realized it should be logical continentName -->
+		<h2 th:text="${countryName}"></h2>
+		  
+		
+		<!-- picture of continent -->
+		<Section class="map" id="map">
+		    <img th:src="@{${path}}"></img>
+		</section>
+		
+		<div class ="museums" id="museums">
+			<div th:each="a : ${museumList}">							
+					<div class="img__wrap">
+					  <img class="img__img" th:src="@{${a[1]}}"	width = 300px height = 300px/>
+					  <a class="img__description" th:href="@{|${countryName}/${a[0]}|}"><p th:text = "${a[0]}"></p></a>
+					  
+					</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
